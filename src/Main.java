@@ -1,6 +1,7 @@
 import challenges.Challenge1;
 import challenges.Challenge2;
 import challenges.Challenge3;
+import challenges.Challenge4;
 
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class Main {
         System.out.println("1 - Primitive Data Types (Challenge1)");
         System.out.println("2 - Wrapper Object Types (Challenge2)");
         System.out.println("3 - Arrays with Primitive Types (Challenge3)");
+        System.out.println("4 - Handle Division & Exceptions (Challenge4)");
         System.out.print("Your choice: ");
 
         int choice = scanner.nextInt();
@@ -26,6 +28,9 @@ public class Main {
                 break;
             case 3:
                 new Challenge3().run();
+                break;
+            case 4:
+                new Challenge4().run();
                 break;
             default:
                 System.out.println("Invalid choice. Please select 1, 2, or 3.");
